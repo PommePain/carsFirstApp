@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  
+  <modelVersion>4.0.0</modelVersion>
+  
+  <parent>
+    <groupId>edu.byu.hbll.maven</groupId>
+    <artifactId>library-parent</artifactId>
+    <version>4.0.1</version>
+  </parent>
+  
+  <groupId>org.example</groupId>
+  <artifactId>carsLittleApp</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <packaging>jar</packaging>
+  
+  <name>${project.groupId}:${project.artifactId}</name>
+  <description>true</description>
+  <url>https://${scm.repository}</url>
+  
+  <properties>
+    <scm.repository>gitlab.com/byuhbll/lib/java/${project.artifactId}</scm.repository>
+    <maven.compiler.source>1.9</maven.compiler.source>
+    <maven.compiler.target>1.9</maven.compiler.target>
+    <java.version>19</java.version>
+  </properties>
+  
+  <dependencies>
+    <dependency>
+      <groupId>com.mysql</groupId>
+      <artifactId>mysql-connector-j</artifactId>
+      <version>8.0.33</version>
+      <scope>compile</scope>
+    </dependency>
+  </dependencies>
+  
+</project>
